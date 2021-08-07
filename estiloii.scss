@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+
+/* ----------------------------------index---------------------------------------------------------*/
+
+@import "../pf20/variable.scss"
+ #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#mainNav .nav-link {
+    transition: none;
+    padding: 2px 2px 2px 2px;
+    margin: 0px 20px 0px 0px;
+    color: $color;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+#mainNav .navbar-brand {
+    padding: 1rem 0;
+    color: $color;
+}
+
+@media (min-width: 992px) {
+    .masthead h2,
+    .masthead .h2 {
+        max-width: 30rem;
+        font-size: 2rem;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    margin-bottom: 0;
+    list-style: none;
+    color: #000;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink {
+        background-color: rgba(255, 255, 255, 0.849);
+    }
+}
+
+#mainNav .navbar-toggler {
+    font-size: 20%;
+    padding: 0.2rem;
+    color: #64a19d;
+    border: 1px solid #64a19d;
+}
+
+@keyframes transf {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 6rem;
+    animation-name: transf;
+    animation-duration: 5s;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    background-color: transparent;
+    border: 3px solid transparent;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 5rem 0;
+    background: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.masthead h2,
+.masthead .h2 {
+    max-width: 20rem;
+    font-size: 1.5rem;
+}
+
+.text-white-50 {
+    color: #FFFFFF !important;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 90%;
+    padding: 1rem;
+    color: $color;
+    border: 1px solid $color;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.55);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+
+/* ----------------------------------nav trans---------------------------------------------------------*/
+
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink .nav-link {
+        color: #000;
+        padding: 0.5rem 0.5rem 0.5rem;
+        border-bottom: 0.25rem solid transparent;
+    }
+}
+
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink .nav-link {
+        color: #000;
+        padding: 0.5rem 0.5rem 0.5rem;
+        border-bottom: 0.25rem solid transparent;
+    }
+}
+
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #000;
+        outline: none;
+        border-bottom: 0.25rem solid transparent;
+    }
+}
+
+
+/* ----------------------------------fin index---------------------------------------------------------*/
+
+
+/* ----------------------------------mantenimiento---------------------------------------------------------*/
+
+.projects-section {
+    padding: 6rem 0;
+}
+
+.bg-light {
+    background-color: #1a1919 !important;
+}
+
+
+/* ---------------------------------fin-mantenimiento---------------------------------------------------------*/
+
+
+/* ----------------------------------nosotros---------------------------------------------------------*/
+
+@media (min-width: 992px) {
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 90%;
+        margin: 10rem;
+    }
+}
+
+.mx-auto {
+    margin-top: -5rem;
+    font-size: 10rem;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+@media (min-width: 992px) {
+    .projects-section .project-text {
+        padding: 2rem;
+    }
+}
+
+.projects-section .project-text {
+    padding: 2rem;
+    font-size: 90%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+h2,
+.h2 {
+    font-size: calc(1.325rem + 0.9vw);
+}
+
+.sobre-section {
+    padding-top: 2rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.about-section {
+    padding-top: 2rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+
+/* ---------------------------------fin -nosotros---------------------------------------------------------*/
+
+
+/* ----------------------------------Servicios---------------------------------------------------------*/
+
+.about-section {
+    padding-top: 1rem;
+    background: #000000;
+    background-color: cover;
+    background: cover;
+}
+
+.containerN {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 6rem;
+    margin: 3rem;
+    box-sizing: border-box;
+}
+
+.boxN {
+    background: transparent;
+    margin: 1rem;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.box1 {
+    grid-column: 2/ 1;
+    height: 200px;
+}
+
+.fondox {
+    /*background-color: #000000;*/
+    background-color: cover;
+    background: cover;
+}
+
+.about-section {
+    padding-top: 1rem;
+    background: #000000;
+    background-color: cover;
+    background: cover;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.about-section {
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.imagen--modifier {
+    display: block;
+    justify-content: center !important;
+    color: #FFFFFF;
+    border: solid 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+
+/* -------------------------------fin---Servicios---------------------------------------------------------*/
+
+
+/* ----------------------------------Pag Contacto---------------------------------------------------------*/
+
+body {
+    box-sizing: border-box;
+    background-color: #1b1a1a;
+    color: #FFFFFF;
+    padding: 0 1.5rem;
+}
+
+.contaV {
+    max-width: 1170 px;
+    padding: 1, 5rem;
+}
+
+.logoP {
+    text-align: center;
+    font-size: 2rem;
+    color: $color;
+    padding: 2rem;
+}
+
+.contactW {
+    box-shadow: 0 0 20px rgba(255, 255, 255, .3);
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+.contacFo {
+    background: #222222;
+}
+
+.contactIn {
+    background-color: #000000;
+}
+
+.contacFo form button,
+.contacFo form input,
+.contacFo form textarea {
+    width: 50%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #dc3545;
+    color: #FFFFFF;
+}
+
+.contacFo form button {
+    background: #FF3131;
+    border: 0;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 1em;
+    margin: 15px;
+}
+
+.contacFo form button:hover,
+.contacFo form button:focus {
+    background: #dc3545;
+    color: #FFFFFF;
+}
+
+.contacFo form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.contacFo .block {
+    grid-column: 1 / 1;
+}
+
+
+/************ variable maps**********/
+
+.bt-a {
+    background-color: #55acee;
+}
+
+.bt-b {
+    background-color: #3a5795;
+}
+
+.bt-c {
+    background-color: #15c415;
+}
+
+
+/*************************************/
+
+.botona--modifier button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: row;
+    -ms-flex-pack: row;
+    justify-content: row;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.botonb--modifier button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: row;
+    -ms-flex-pack: row;
+    justify-content: row;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.botonc--modifier button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: row;
+    -ms-flex-pack: row;
+    justify-content: row;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.foot--modifier {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    background-color: #000000;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.foot--modifier__element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1em;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}
+
+
+/* ----------------------------------fin Contacto---------------------------------------------------------*/
