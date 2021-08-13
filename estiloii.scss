@@ -5,7 +5,8 @@
     }
     /* ----------------------------------index---------------------------------------------------------*/
     
-    @import "../pf20/variable.scss" #mainNav {
+    @import "../pf20/variable.scss";
+    #mainNav {
         padding-top: 0;
         padding-bottom: 0;
         background-color: black;
@@ -19,6 +20,14 @@
         color: $color;
         border: solid 1px;
         border-radius: 5px;
+    }
+    
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
     
     #mainNav .navbar-brand {
@@ -55,22 +64,6 @@
         }
     }
     
-    #mainNav .navbar-toggler {
-        font-size: 20%;
-        padding: 0.2rem;
-        color: #64a19d;
-        border: 1px solid #64a19d;
-    }
-    
-    @keyframes transf {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
     .logo {
         display: flex;
         box-sizing: border-box;
@@ -85,6 +78,16 @@
         padding: auto;
         background-color: transparent;
         border: 3px solid transparent;
+    }
+    /* -----------------animacion logo ----*/
+    
+    @keyframes transf {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
     
     .masthead {
@@ -124,13 +127,6 @@
         border-color: rgba(0, 0, 0, 0.1);
     }
     
-    button:not(:disabled),
-    [type=button]:not(:disabled),
-    [type=reset]:not(:disabled),
-    [type=submit]:not(:disabled) {
-        cursor: pointer;
-    }
-    
     .navbar-toggler {
         padding: 0.25rem 0.75rem;
         font-size: 1.25rem;
@@ -140,15 +136,7 @@
         border-radius: 0.25rem;
         transition: box-shadow 0.15s ease-in-out;
     }
-    /* ----------------------------------nav trans---------------------------------------------------------*/
-    
-    @media (min-width: 992px) {
-        #mainNav.navbar-shrink .nav-link {
-            color: #000;
-            padding: 0.5rem 0.5rem 0.5rem;
-            border-bottom: 0.25rem solid transparent;
-        }
-    }
+    /* ----------------------------------nav trans----/*--barra fixed blanca---------------------------------------*/
     
     @media (min-width: 992px) {
         #mainNav.navbar-shrink .nav-link {
@@ -165,8 +153,22 @@
             border-bottom: 0.25rem solid transparent;
         }
     }
+    
+    @media (min-width: 992px) {
+        #mainNav.navbar-shrink {
+            background-color: rgba(255, 255, 255, 0.849);
+        }
+    }
     /* ----------------------------------fin index---------------------------------------------------------*/
     /* ----------------------------------mantenimiento---------------------------------------------------------*/
+    
+    body {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #1b1a1a;
+        color: #FFFFFF;
+        padding: 0 1.5rem;
+    }
     
     .projects-section {
         padding: 6rem 0;
@@ -174,6 +176,36 @@
     
     .bg-light {
         background-color: #1a1919 !important;
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        .w-100 {
+            width: 100% !important;
+        }
+        hr:not([size]) {
+            height: 1px;
+        }
+        .g-0,
+        .gx-0 {
+            --bs-gutter-x: 0;
+        }
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(var(--bs-gutter-y) * -1);
+            margin-right: calc(var(--bs-gutter-x) * -.5);
+            margin-left: calc(var(--bs-gutter-x) * -.5);
+        }
+        @media (min-width: 992px) {
+            .col-lg-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+        }
     }
     /* ---------------------------------fin-mantenimiento---------------------------------------------------------*/
     /* ----------------------------------nosotros---------------------------------------------------------*/
@@ -235,6 +267,7 @@
         background-color: cover;
         background: cover;
     }
+    /************ grid**********/
     
     .containerN {
         display: grid;
@@ -260,6 +293,7 @@
         grid-column: 2/ 1;
         height: 200px;
     }
+    /**********************/
     
     .fondox {
         /*background-color: #000000;*/
@@ -318,8 +352,9 @@
         text-align: center;
         font-size: 2rem;
         color: $color;
-        padding: 2rem;
+        padding: 5rem;
     }
+    /************ formulario**********/
     
     .contactW {
         box-shadow: 0 0 20px rgba(255, 255, 255, .3);
@@ -371,6 +406,7 @@
     .contacFo .block {
         grid-column: 1 / 1;
     }
+    /**********************/
     /************ variable maps**********/
     
     .bt-a {
@@ -384,7 +420,6 @@
     .bt-c {
         background-color: #15c415;
     }
-    /*************************************/
     
     .botona--modifier button {
         display: -webkit-box;
@@ -418,6 +453,8 @@
         color: #FFFFFF;
         font-size: 1rem;
     }
+    /*************************************/
+    /************ footer**********/
     
     .foot--modifier {
         display: -webkit-box;
@@ -439,3 +476,39 @@
         font-size: 0.8rem;
     }
     /* ----------------------------------fin Contacto---------------------------------------------------------*/
+    /* ----------------------------------media querys---------------------------------------------------------*/
+    
+    @media (min-width: 576px) {
+        .navbar-expand-sm {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .navbar-expand-md {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .navbar-expand-xl {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+    }
+    
+    @media (min-width: 1400px) {
+        .navbar-expand-xxl {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+    }
